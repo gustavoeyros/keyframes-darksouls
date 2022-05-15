@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title{
+    padding: 15px;
+}
+.title h1{
+    text-align: center;
+    color: white;
+    text-decoration: line-through 2px;
+  text-shadow: -1px 0 white, 0 1px white,
+      1px 0 white, 0 -1px white;
+  text-shadow: 0 0 0.2em white, 0 0 0.2em black,
+        0 0 0.2em white;
+  color: white;
+}
+.title h2{
+    color: white;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 10px;
+    text-shadow: -1px 0 white, 0 1px white,
+      1px 0 white, 0 -1px white;
+  text-shadow: 0 0 0.2em white, 0 0 0.2em black,
+        0 0 0.2em white;
+  color: white;
+}
+.rodape{
+    color: white;
+    font-size: 15px;
+    bottom: 0;
+        position: fixed;
+    opacity: 0.5;
+    font-family: 'Kanit', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-shadow: -1px 0 white, 0 1px white,
+        1px 0 white, 0 -1px white;
+    text-shadow: 0 0 0.2em white, 0 0 0.2em black,
+          0 0 0.2em white;
+    color: white;
+    
+}
+ #anima-div{
+    background: url("../img/minhabasedaanimacao.png");
+    width: 200px;
+    height: 200px;
+    animation: anima-sprite 1s steps(11) infinite;
+}
+
+@keyframes anima-sprite{
+    from{background-position: 0px;}
+    to{background-position: -2213px;}
+
+} 
